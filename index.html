@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <style>
+        header {
+            position: fixed;
+        }
+
+        #contact a {
+            text-decoration: none;
+            border-bottom: 1px solid transparent;
+            transition: all .2s;
+
+            &:hover {
+                border-bottom: 1px solid white;
+            }
+        }
+
+        #about,
+        #education,
+        #interests {
+            padding: 8rem 3rem 8rem 3rem;
+        }
+
+        .nav li a {
+            border-bottom: 1px solid transparent;
+            transition: all .2s;
+            color: white;
+            border-radius: 25px;
+
+            &:hover {
+                background-color: white;
+                color: black;
+            }
+        }
+
+        .d-flex {
+            list-style: none;
+        }
+
+        .bi-facebook::before {
+            font-size: 2rem;
+            color: rgb(0, 89, 255);
+        }
+
+        .bi-envelope-at-fill::before {
+            font-size: 2rem;
+            color: rgb(248, 51, 51);
+        }
+
+        .bi-telephone-fill::before {
+            font-size: 2rem;
+            color: rgb(80, 80, 80);
+        }
+
+        .bi-github::before {
+            font-size: 2rem;
+            color: rgb(80, 80, 80);
+        }
+        body::-webkit-scrollbar {
+            width: .5rem;
+            background-color: rgb(214, 214, 214);
+        }
+        body::-webkit-scrollbar-thumb {
+            background-color: rgb(58, 58, 58);
+        }
+    </style>
+</head>
+
+<body class="bg-secondary">
+    <header class="container-fluid bg-dark">
+        <nav class="navbar">
+            <a class="navbar-brand text-white" href="#">My Profile</a>
+            <ul class="nav gap-3">
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">About Me</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#education">Education</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#interests">Interests/Hobbies</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <div class="section container-fluid border-bottom bg-dark-subtle" id="about">
+        <h2>About Me</h2>
+        <p>I'm Michael Josh Maranga, 18 years old and living in San Miguel, Cordova, Cebu. I am a passionate
+            individual with a keen interest in technology and creativity. I love to learn new
+            things and explore different ideas.</p>
+    </div>
+    <div class="section container-fluid bg-body-secondary" id="education">
+        <h2>Education</h2>
+        <ul>
+            <li><span>College - </span>Bachelor of Science in Information Technology, Cordova Public College</li>
+            <li><span>High School - </span>Cordova Catholic Cooperative School</li>
+            <li><span>Elementary - </span>Pilipog Elementary School</li>
+        </ul>
+    </div>
+    <div class="section container-fluid bg-body-tertiary" id="interests">
+        <h2>Interests/Hobbies</h2>
+        <ul>
+            <li>Badminton</li>
+            <li>Video Games</li>
+            <li>Creating/Designing Web Pages</li>
+            <li>Learning programming languages</li>
+        </ul>
+    </div>
+    <div class="section container-fluid p-5 bg-dark" id="contact">
+        <h2 class="mb-3 text-white">Contacts</h2>
+        <ul class="d-flex flex-column gap-3">
+            <li><i class="bi bi-facebook"><a class="ms-3" href="https://www.facebook.com/michael.gulfan.12">Michael
+                        Josh Maranga</a></i></li>
+            <li><i class="bi bi-envelope-at-fill"><a class="ms-3"
+                        href="mailto:michaeljoshmaranga@gmail.com">michaeljoshmaranga@gmail.com</a></i></li>
+            <li><i class="bi bi-telephone-fill"><a class="ms-3" href="tel:+6309667960762">#09667960762</a></i></li>
+        </ul>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
